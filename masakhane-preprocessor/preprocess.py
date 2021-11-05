@@ -135,7 +135,8 @@ class Preprocessor():
         new_filename = str(path.name).split(path.suffix)[0]+'_CLEAN'+path.suffix
         if save_list_to_file(clean_texts,new_filename,output_path):
             print(f'Clean file(s) saved successfully to {os.path.join(output_path,new_filename)}')
-        
-my_prep = Preprocessor(lang='yor',lower=True)
-print(my_prep.available_langs())
-print(my_prep.preprocess_str('Dịka● ndọrọndọrọọchịchị maka ntuliaka ọkwa Gọvanọ Anambra steeti si na-aga nke afọ 2021, ndị nọ.'))
+
+if __name__ == "__main__":
+    my_prep = Preprocessor(lang='yor',lower=True)
+    print(my_prep.available_langs())
+    print(my_prep.preprocess_str('Dịka● ndọrọndọrọọchịchị maka ntuliaka ọkwa Gọvanọ Anambra steeti si na-aga nke afọ 2021, ndị nọ.'))
