@@ -58,6 +58,6 @@ We are open to and grateful for ideas to make this better. You can propose ideas
 ---
 
 <h3 align="center">
-    With 💙 From <a href="https://github.com/chrisemezue" target='_blank'>Chris Emezue</a>
+    With 💙 From <a href="https://github.com/chrisemezue" target="_blank">Chris Emezue</a>
 </h3>
 
