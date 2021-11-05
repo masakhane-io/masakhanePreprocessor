@@ -56,5 +56,5 @@ On successful completion you get this message:
 We are open to and grateful for ideas to make this better. You can propose ideas as issues or pull requests.
 
 ---
-### With 💙 From Chris Emezue
+### With 💙 From [Chris Emezue](https://github.com/chrisemezue)
 
