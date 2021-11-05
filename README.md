@@ -15,11 +15,10 @@ from masakhane-preprocessor import Preprocessor
 
 my_prep = Preprocessor(lang='ig')
 ```
-You can also use the default language setting and configure the preprocessing parameters you want directly:
+You can also directly include some additional parameters you want:
 ```python
 my_prep = Preprocessor(lang='ig',
-              use_diacritics=False,
-              lower=False,
+              lower=True,
               strip_punctuation=True,
               strip_symbols=True)
 ```
