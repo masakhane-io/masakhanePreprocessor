@@ -1,2 +1,2 @@
-cleantext
+clean-text
 langcodes
