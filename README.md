@@ -46,6 +46,10 @@ On successful completion you get this message:
 
 ### Properties of the preprocessing tool
 1. Language-first
+    It can:
+    - map any African language name provided to its language code. You can write `Preprocessor(lang='yoruba')` using just the name. 
+    - map any language code to its BCP47 variant. So even if you use `yo` or `yor` it does not matter.
+
 2. Simple to use
 
 ## Contribution
