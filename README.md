@@ -25,7 +25,7 @@ my_prep = Preprocessor(lang='ig',
 ```
 ### preproces_str
 To preprocess a string use the `preproces_str` function:
-```
+```python
 clean_text = my_prep.preprocess_str('Dịka● ndọrọndọrọọchịchị maka ntuliaka ọkwa Gọvanọ Anambra steeti si na-aga nke afọ 2021, ndị nọ.')
 ```
 You get the following as output:
