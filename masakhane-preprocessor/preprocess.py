@@ -5,6 +5,7 @@ import json
 import unicodedata
 from cleantext import clean
 from pathlib import Path
+from langs import get_correct_language_code
 
 
 #Each language has its own preprocessing rules
@@ -29,21 +30,42 @@ def save_list_to_file(list_text,save_filename,output_path):
 
 
 class Preprocessor():
-    def __init__(self,lang='ig',
+    def __init__(self,lang='',
                       use_diacritics=False,
                       lower=False,
                       strip_punctuation=True,
                       strip_symbols=True):
         
+        if lang!='':
+            lang = get_correct_language_code(lang)
+            if not lang:
+                print(f'Could not get the correct code for your language. If you cannot find your language in the available languages please raise an issue.')
+  
         self.USE_DIACRITICS=False
+        
+        #Default language rules
+        self.lang_rules={"allowed_symbols": [], "diacritics": False}
+       
+       
+        #-----------------------
         try:
-            self.lang_rules = read_json(f'..rules/{lang}.json')
+            self.lang_rules = read_json(f'rules/{lang}.json')
         except Exception as e:
             #Language rules probably does not exist. For now pass
             #TO DO: Make better
-            print(f'Cannot find the rules for your language. \n {e}')
+            print(f'Cannot find the rules for your language. Switching to the default. Call .available_langs() to get the current available languages')
             pass
-            
+        
+        #-------------------------
+        
+        #-----------------------------
+        languages = read_json('languages.json')
+        self.language_map={}
+        for l_ in languages:
+            self.language_map.update({l_['language_short']:l_})
+        #-----------------------------
+       
+         
         if use_diacritics or self.lang_rules['diacritics']:
             self.USE_DIACRITICS=True
             
@@ -78,6 +100,11 @@ class Preprocessor():
         'no_currency_symbols':True
         }
         
+    def available_langs(self):
+        available_langs = [str(f.name).split('.json')[0] for f in os.scandir('rules')]
+        return list([f"{a} -> {self.language_map[a]['language']}" for a in available_langs])
+        
+    
     def preprocess_str(self,text):
         self.clean_text_kwargs['text']=text
         text = clean(**self.clean_text_kwargs)
@@ -108,5 +135,3 @@ class Preprocessor():
         if save_list_to_file(clean_texts,new_filename,output_path):
             print(f'Clean file(s) saved successfully to {os.path.join(output_path,new_filename)}')
         
-my_prep = Preprocessor(lang='ig')
-my_prep.preprocess_str('Dịka● ndọrọndọrọọchịchị maka ntuliaka ọkwa Gọvanọ Anambra steeti si na-aga nke afọ 2021, ndị nọ.')

@@ -38,7 +38,7 @@ You get the following as output:
 ### preprocess_file
 To preprocess a file use the `preprocess_file` function:
 ```python
-my_prep.preprocess_file('./ig.txt',
+my_prep.preprocess_file('ig.txt',
                         output_path=None #Specify the output path. If unspecified, uses the parent directory of input file)
 ```
 On successful completion you get this message:
