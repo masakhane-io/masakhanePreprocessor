@@ -1,4 +1,4 @@
-# masakhane-preprocessor 
+# `masakhane-preprocessor` 
 An effective language-first preprocessing tool for African languages (🔧 Beta version).
 
 We build on the [clean-text](https://github.com/jfilter/clean-text/tree/master/cleantext) preprocessor.
