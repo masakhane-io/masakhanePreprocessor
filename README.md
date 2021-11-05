@@ -39,13 +39,13 @@ You get the following as output:
 To preprocess a file use the `preprocess_file` function:
 ```python
 my_prep.preprocess_file('./ig.txt',
-                        output_path=None #Specify the output path. If unspecified, uses the parent directory of file)
+                        output_path=None #Specify the output path. If unspecified, uses the parent directory of input file)
 ```
 On successful completion you get this message:
 `Clean file(s) saved successfully to xxxxxxx/ig_CLEAN.txt`
 
 ### Properties of the preprocessing tool
-1. Language first
+1. Language-first
 2. Simple to use
 
 ## Contribution
