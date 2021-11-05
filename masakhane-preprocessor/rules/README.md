@@ -1,7 +1,7 @@
 # masakhane-preprocessing 
 An effective preprocessing tool for African languages (🔧 Beta version).
 
-## Rules
+## Rules https://progress-bar.dev/3/?scale=1000&title=African%20languages&width=120&color=babaca&suffix=
 The rules help us build more intuitive preprocessors for the African language.
 
 ## Contributing
