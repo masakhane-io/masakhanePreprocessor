@@ -1,7 +1,7 @@
 # masakhane-preprocessing
-An effective preprocessing tool for African languages [Beta version].
+An effective preprocessing tool for African languages (U+1F527 Beta version).
 
-This builds on the [clean-text](https://github.com/jfilter/clean-text/tree/master/cleantext) preprocessor.
+We build on the [clean-text](https://github.com/jfilter/clean-text/tree/master/cleantext) preprocessor.
 
 ## How to Use
 Install:
