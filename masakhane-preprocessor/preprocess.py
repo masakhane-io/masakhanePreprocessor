@@ -7,6 +7,7 @@ from cleantext import clean
 from pathlib import Path
 from langs import get_correct_language_code
 
+#Designed by Chris Emezue
 
 #Each language has its own preprocessing rules
 #-allowed_symbols, disallowed_symbols which affects punct
