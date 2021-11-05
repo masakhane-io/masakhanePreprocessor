@@ -57,7 +57,7 @@ We are open to and grateful for ideas to make this better. You can propose ideas
 
 ---
 
-<p align="center">
+<h1 align="center">
     ### With 💙 From [Chris Emezue](https://github.com/chrisemezue)
-</p>
+</h1>
 
