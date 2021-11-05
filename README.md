@@ -15,6 +15,12 @@ from masakhane-preprocessor import Preprocessor
 
 my_prep = Preprocessor(lang='ig')
 ```
+## Current Languages Supported
+```
+- (Igbo)[https://en.wikipedia.org/wiki/Igbo_language#Phonology]
+- (Fon)[https://fr.wikipedia.org/wiki/Fon_(langue)#Prononciation]
+- (Yoruba)[https://en.wikipedia.org/wiki/Yoruba_language]
+```
 You can also directly include some additional parameters you want:
 ```python
 my_prep = Preprocessor(lang='ig',
