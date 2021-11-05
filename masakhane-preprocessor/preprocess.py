@@ -7,7 +7,6 @@ from cleantext import clean
 from pathlib import Path
 from langs import get_correct_language_code
 
-#Designed by Chris Emezue
 
 #Each language has its own preprocessing rules
 #-allowed_symbols, disallowed_symbols which affects punct
@@ -76,6 +75,7 @@ class Preprocessor():
         self.allowed_symbols= [ord(a) for a in self.lang_rules['allowed_symbols']]
                 
         #from https://github.com/jfilter/clean-text/blob/master/cleantext/constants.py
+        #Unicode characters: https://www.fileformat.info/info/unicode/category/index.htm
         self.PUNCT_TRANSLATE_UNICODE = dict.fromkeys(
             (i for i in range(sys.maxunicode) if unicodedata.category(chr(i)).startswith("P") and i not in self.allowed_symbols),
             "",
@@ -137,6 +137,6 @@ class Preprocessor():
             print(f'Clean file(s) saved successfully to {os.path.join(output_path,new_filename)}')
 
 if __name__ == "__main__":
-    my_prep = Preprocessor(lang='yor',lower=True)
+    my_prep = Preprocessor(lang='fon',lower=True,use_diacritics=True)
     print(my_prep.available_langs())
-    print(my_prep.preprocess_str('Dịka● ndọrọndọrọọchịchị maka ntuliaka ọkwa Gọvanọ Anambra steeti si na-aga nke afọ 2021, ndị nọ.'))
+    print(my_prep.preprocess_str('èụẹ́ēạ́ị̄ìīí ði ɔ enyiɛ̆, ɛ̃ winnya ɖu nɔ mya nukún nú mǐî, ï hú nǔ bǐ ɔ mǐ sixuὲ` nugbǒmaɖɔ dó mɔ nǔ ɖò dandan é ɖé'))

@@ -1,6 +1,7 @@
 from langcodes import *
 import json
 
+
 #This will help with 
 # 1. mapping an African language name to its lang code
 # 2. mapping any language code to its BCP47 variant.
@@ -10,7 +11,7 @@ def read_json(file):
     with open(file,'r',encoding='utf8') as f:
         return json.load(f)
 
-
+#African languages list from https://github.com/dsfsi/masakhane-web/blob/master/src/server/core/languages.json
 languages = read_json('languages.json')
 language_mapping =   {}
 for l in languages:
