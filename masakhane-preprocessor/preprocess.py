@@ -28,13 +28,43 @@ def save_list_to_file(list_text,save_filename,output_path):
             
     return True 
 
-
+def get_ord(n: list):
+    '''
+    does ord(a) for each a in n, but also checks for when a is not a single character
+    '''
+    allowed_ints = []
+    allowed_char = []
+    
+    for a in n:
+        try:
+            allowed_ints.append(ord(a))
+        except Exception:
+            #a is not a single character. use its char instead of ord()
+            allowed_char.append(a)
+    return allowed_ints,allowed_char
+   
 class Preprocessor():
     def __init__(self,lang='',
-                      use_diacritics=False,
-                      lower=False,
-                      strip_punctuation=True,
-                      strip_symbols=True):
+                    use_diacritics=False,
+                    lower=False,
+                    strip_punctuation=True,
+                    strip_symbols=True,             # BELOW ARE FURTHER PARAMETERS FROM CLEAN-TEXT. If you set lang, I recommend not to touch below as it's been done for You already
+                    fix_unicode=False,
+                    no_line_breaks=False,           # fully strip line breaks as opposed to only normalizing them
+                    no_urls=False,                  # replace all URLs with a special token
+                    no_emails=False,                # replace all email addresses with a special token
+                    no_phone_numbers=False,         # replace all phone numbers with a special token
+                    no_numbers=False,               # replace all numbers with a special token
+                    no_digits=False,                # replace all digits with a special token
+                    no_currency_symbols=False,      # replace all currency symbols with a special token
+                    no_punct=False,                 # remove punctuations
+                    replace_with_punct="",          # instead of removing punctuations you may replace them
+                    replace_with_url="<URL>",
+                    replace_with_email="<EMAIL>",
+                    replace_with_phone_number="<PHONE>",
+                    replace_with_number="<NUMBER>",
+                    replace_with_digit="0",
+                    replace_with_currency_symbol="<CUR>"):
         
         if lang!='':
             lang = get_correct_language_code(lang)
@@ -72,33 +102,40 @@ class Preprocessor():
         self.strip_punctuation=strip_punctuation
         self.strip_symbols=strip_symbols
            
-        self.allowed_symbols= [ord(a) for a in self.lang_rules['allowed_symbols']]
+        self.allowed_symbols,self.allowed_chars= get_ord(self.lang_rules['allowed_symbols'])
                 
         #from https://github.com/jfilter/clean-text/blob/master/cleantext/constants.py
         #Unicode characters: https://www.fileformat.info/info/unicode/category/index.htm
         self.PUNCT_TRANSLATE_UNICODE = dict.fromkeys(
-            (i for i in range(sys.maxunicode) if unicodedata.category(chr(i)).startswith("P") and i not in self.allowed_symbols),
+            (i for i in range(sys.maxunicode) if unicodedata.category(chr(i)).startswith("P") and i not in self.allowed_symbols and chr(i) not in self.allowed_chars),
             "",
         )
         
         self.SYMBOLS_TRANSLATE_UNICODE = dict.fromkeys(
-            (i for i in range(sys.maxunicode) if unicodedata.category(chr(i)).startswith("S") and i not in self.allowed_symbols),
+            (i for i in range(sys.maxunicode) if unicodedata.category(chr(i)).startswith("S") and i not in self.allowed_symbols and chr(i) not in self.allowed_chars),
             "",
         )
 
             
         self.clean_text_kwargs = {
         'text':'',
-        'fix_unicode':False,
+        'fix_unicode':fix_unicode,
         'to_ascii':False if self.USE_DIACRITICS else True,
         'lower':False if not lower else True,
-        'no_line_breaks':False,
-        'no_urls':True,
-        'no_emails':True,
-        'no_phone_numbers':True,
-        'no_numbers':False,
-        'no_digits':False,
-        'no_currency_symbols':True
+        'no_line_breaks':no_line_breaks,
+        'no_urls':no_urls,
+        'no_emails':no_emails,
+        'no_phone_numbers':no_phone_numbers,
+        'no_numbers':no_numbers,
+        'no_digits':no_digits,
+        'no_currency_symbols':no_currency_symbols,
+        'replace_with_punct':replace_with_punct,          # instead of removing punctuations you may replace them. #from CLEAN-TEXT
+        'replace_with_url':replace_with_url,
+        'replace_with_email':replace_with_email,
+        'replace_with_phone_number':replace_with_phone_number,
+        'replace_with_number':replace_with_number,
+        'replace_with_digit':replace_with_digit,
+        'replace_with_currency_symbol':replace_with_currency_symbol
         }
         
     def available_langs(self):
@@ -137,6 +174,7 @@ class Preprocessor():
             print(f'Clean file(s) saved successfully to {os.path.join(output_path,new_filename)}')
 
 if __name__ == "__main__":
-    my_prep = Preprocessor(lang='fon',lower=True,use_diacritics=True)
+    #Testing for Fon
+    my_prep = Preprocessor(lang='fon')
     print(my_prep.available_langs())
-    print(my_prep.preprocess_str('èụẹ́ēạ́ị̄ìīí ði ɔ enyiɛ̆, ɛ̃ winnya ɖu nɔ mya nukún nú mǐî, ï hú nǔ bǐ ɔ mǐ sixuὲ` nugbǒmaɖɔ dó mɔ nǔ ɖò dandan é ɖé'))
+    print(my_prep.preprocess_str('è:ụẹ́ēạ́ị̄ìīí ði ɔ na-aga enyiɛ̆"he went":, ɛ̃ winnya ɖu nɔ mya nukún nú mǐî, ï hú nǔ bǐ ɔ mǐ sixuὲ` nugbǒmaɖɔ dó mɔ nǔ ɖò dandan é ɖé'))
