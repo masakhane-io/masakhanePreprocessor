@@ -57,7 +57,7 @@ We are open to and grateful for ideas to make this better. You can propose ideas
 
 ---
 
-<h1 align="center">
-    ### With 💙 From [Chris Emezue](https://github.com/chrisemezue)
-</h1>
+<h3 align="center">
+    With 💙 From <a href="https://github.com/chrisemezue">Chris Emezue</a>
+</h3>
 
