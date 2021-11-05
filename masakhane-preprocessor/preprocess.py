@@ -101,7 +101,7 @@ class Preprocessor():
         }
         
     def available_langs(self):
-        available_langs = [str(f.name).split('.json')[0] for f in os.scandir('rules')]
+        available_langs = [str(f.name).split('.json')[0] for f in os.scandir('rules') if str(f.name).endswith('json')]
         return list([f"{a} -> {self.language_map[a]['language']}" for a in available_langs])
         
     
@@ -136,5 +136,5 @@ class Preprocessor():
             print(f'Clean file(s) saved successfully to {os.path.join(output_path,new_filename)}')
         
 my_prep = Preprocessor(lang='yor',lower=True)
-#print(my_prep.available_langs())
+print(my_prep.available_langs())
 print(my_prep.preprocess_str('Dịka● ndọrọndọrọọchịchị maka ntuliaka ọkwa Gọvanọ Anambra steeti si na-aga nke afọ 2021, ndị nọ.'))
