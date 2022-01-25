@@ -4,7 +4,7 @@ This is a project to include stopwords for African languages. The importance of 
 
 ## Contributing
 1. Fork the repository
-2. Go to the  `.txt` file of your language tag in the `languages` folder. Consult [LANGUAGE-TABLE.md](LANGUAGE-TABLE.md]) for the tag of your language.
+2. Go to the  `.txt` file of your language tag in the `languages` folder. Consult [LANGUAGE-TABLE.md](LANGUAGE-TABLE.md) for the tag of your language.
 3. Edit the file: add more stopwords for your language or delete the wrong ones.
 4. Submit your pull request for merging.
 Alternatively,
