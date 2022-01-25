@@ -1,7 +1,6 @@
 # Table of standardized codes for African languages
-Standardization was done with [langcodes](https://pypi.org/project/langcodes/)
-Full list of African languages and their standard tags from [here](https://github.com/chrisemezue/lanfrica/blob/lanuages/src/languages/languages.json).
-
+- Curated list of African languages and their standard tags from [Lanfrica](https://github.com/chrisemezue/lanfrica/blob/lanuages/src/languages/languages.json).
+- You can do a search for your language to find its `tag`.
 
 ____
 
