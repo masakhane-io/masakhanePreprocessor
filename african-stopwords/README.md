@@ -10,14 +10,14 @@ This is a project to include stopwords for African languages in NLP. The importa
 
 Alternatively,
 
-5. If there are websites with african stopwords, please indicate (via an issue or Slack).
+5. If there are websites with african stopwords, please indicate (via an issue or [Masakhane Slack](https://www.google.com/url?q=https%3A%2F%2Fjoin.slack.com%2Ft%2Fmasakhane-nlp%2Fshared_invite%2FenQtODM3ODA3ODE0ODIwLTAyYzg3M2E3Nzg4Y2I3NzgxNDg4MmNlZDE4OTBjMzBjMjg4NTcxMWZlYTg3ZDljMTU4M2FjOTk3MDVjOWM2NGM&sa=D&sntz=1&usg=AFQjCNGNjFNyyutwL-wQso1gYPGCSXGevg)).
  
 ## Plan
-Open to suggestions, for now I think we can:
+Open to suggestions. For now I think we can:
 
 1. Compile a good list of african stopwords and make a feature request to have it added on [nltk](https://github.com/nltk/nltk/blob/develop/CONTRIBUTING.md).
 
 
 ___
 
-- Initial stopwords list for Afrikaans, Hausa, Lugbarati, Lugbarati (Official), Somali, Sesotho, Kiswahili, Yoruba, and isiZulu got from [here](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages) 
+- Initial stopwords list for Afrikaans, Hausa, Lugbarati, Lugbarati (Official), Somali, Sesotho, Kiswahili, Yoruba, and isiZulu got from [here](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages). 
