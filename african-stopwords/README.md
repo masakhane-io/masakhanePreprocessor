@@ -9,6 +9,7 @@ This is a project to include stopwords for African languages. The importance of 
 4. Submit your pull request for merging.
 
 Alternatively,
+
 5. If there are websites with african stopwords, please indicate (via an issue or Slack).
  
 ## Plan
