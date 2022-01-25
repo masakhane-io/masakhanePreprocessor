@@ -4,7 +4,7 @@ This is a project to include stopwords for African languages. The importance of 
 
 ## Contributing
 1. Fork the repository
-2. Go to the  `.txt` file of your language tag in the `languages` folder. Consult [LANGUAGE-TABLE.md](LANGUAGE-TABLE.md) for the tag of your language.
+2. Go to the  `.txt` file of your language tag in the `languages` folder. Consult [LANGUAGE-TABLE.md](LANGUAGE-TABLE.md) for the tag of your language. If the file isn't there, please create one. 
 3. Edit the file: add more stopwords for your language or delete the wrong ones.
 4. Submit your pull request for merging.
 
@@ -15,7 +15,7 @@ Alternatively,
 ## Plan
 Open to suggestions, for now I think we can:
 
-1. Compile a good list of african stopwords (hopefully by __April__ __2022__) and make an issue to have it added on [nltk](https://github.com/nltk/nltk/blob/develop/CONTRIBUTING.md).
+1. Compile a good list of african stopwords and make a feature request to have it officially added on [nltk](https://github.com/nltk/nltk/blob/develop/CONTRIBUTING.md).
 
 
 ___

@@ -1,4 +1,4 @@
-# Table of standardized codes for African languages
+# Table of standardized tags for African languages
 - Curated list of African languages and their standard tags from [Lanfrica](https://github.com/chrisemezue/lanfrica/blob/lanuages/src/languages/languages.json).
 - You can do a search for your language to find its `tag`.
 
