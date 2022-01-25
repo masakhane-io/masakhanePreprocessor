@@ -1,6 +1,6 @@
 # Stopwords for African languages
 
-This is a project to include stopwords for African languages. The importance of stopwords in NLP analysis cannot be over-emphasized.
+This is a project to include stopwords for African languages in NLP. The importance of stopwords in NLP analysis cannot be over-emphasized.
 
 ## Contributing
 1. Fork the repository
@@ -15,7 +15,7 @@ Alternatively,
 ## Plan
 Open to suggestions, for now I think we can:
 
-1. Compile a good list of african stopwords and make a feature request to have it officially added on [nltk](https://github.com/nltk/nltk/blob/develop/CONTRIBUTING.md).
+1. Compile a good list of african stopwords and make a feature request to have it added on [nltk](https://github.com/nltk/nltk/blob/develop/CONTRIBUTING.md).
 
 
 ___
