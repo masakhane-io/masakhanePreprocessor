@@ -7,6 +7,7 @@ This is a project to include stopwords for African languages. The importance of 
 2. Go to the  `.txt` file of your language tag in the `languages` folder. Consult [LANGUAGE-TABLE.md](LANGUAGE-TABLE.md) for the tag of your language.
 3. Edit the file: add more stopwords for your language or delete the wrong ones.
 4. Submit your pull request for merging.
+
 Alternatively,
 5. If there are websites with african stopwords, please indicate (via an issue or Slack).
  
@@ -18,4 +19,4 @@ Open to suggestions, for now I think we can:
 
 ___
 
-- Initial stopwords list for ... from [here](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages) 
+- Initial stopwords list for Afrikaans, Hausa, Lugbarati, Lugbarati (Official), Somali, Sesotho, Kiswahili, Yoruba, and isiZulu got from [here](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages) 
