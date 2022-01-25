@@ -15,7 +15,7 @@ Alternatively,
  
 ### Discussion
 
-Seeing that the choice of what constitutes a stopword in an African language may be open to debate, here is a forum for scholars, researchers, etc to discuss on some controversial stop words or non-stopwords in your African languages.
+Seeing that the choice of what constitutes a stopword in an African language may be open to debate, [here](https://github.com/masakhane-io/masakhane-preprocessing/discussions/categories/african-stopwords) is a forum for scholars, researchers, etc to discuss on some controversial stop words or non-stopwords in your African languages.
 
 If you're not sure if a word is/is not a stopword, the discussion will help.
 If you feel a new word should be added as a stopword in your language, please create a discussion around it.
