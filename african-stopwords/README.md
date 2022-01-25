@@ -9,6 +9,7 @@ This is a project to include stopwords for African languages in NLP. The importa
 4. Make a pull request for merging.
 
 Alternatively,
+
 5. If navigating Github is complex, just write down the stopwords for your language in a `txt` file and send on [Masakhane Slack](https://www.google.com/url?q=https%3A%2F%2Fjoin.slack.com%2Ft%2Fmasakhane-nlp%2Fshared_invite%2FenQtODM3ODA3ODE0ODIwLTAyYzg3M2E3Nzg4Y2I3NzgxNDg4MmNlZDE4OTBjMzBjMjg4NTcxMWZlYTg3ZDljMTU4M2FjOTk3MDVjOWM2NGM&sa=D&sntz=1&usg=AFQjCNGNjFNyyutwL-wQso1gYPGCSXGevg)).
 6. If there are websites/resources with african stopwords, please indicate (via an issue or [Masakhane Slack](https://www.google.com/url?q=https%3A%2F%2Fjoin.slack.com%2Ft%2Fmasakhane-nlp%2Fshared_invite%2FenQtODM3ODA3ODE0ODIwLTAyYzg3M2E3Nzg4Y2I3NzgxNDg4MmNlZDE4OTBjMzBjMjg4NTcxMWZlYTg3ZDljMTU4M2FjOTk3MDVjOWM2NGM&sa=D&sntz=1&usg=AFQjCNGNjFNyyutwL-wQso1gYPGCSXGevg)).
  
