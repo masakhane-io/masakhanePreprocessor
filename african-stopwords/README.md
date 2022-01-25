@@ -3,7 +3,7 @@
 This is a project to include stopwords for African languages in NLP. The importance of stopwords in NLP analysis cannot be over-emphasized.
 
 ## Contributing
-1. Fork the repository
+1. Fork the repository. We are interested in the `african-stopwords` folder. 
 2. Go to the  `.txt` file of your language tag in the `languages` folder. Consult [LANGUAGE-TABLE.md](LANGUAGE-TABLE.md) for the tag of your language. If the file isn't there, please create one. 
 3. Edit the file: add more stopwords for your language or delete the wrong ones.
 4. Submit your pull request for merging.
