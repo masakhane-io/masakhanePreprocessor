@@ -17,7 +17,11 @@ Alternatively,
 
 Seeing that the choice of what constitutes a stopword in an African language may be open to debate, here is a forum for scholars, researchers, etc to discuss on some controversial stop words or non-stopwords in your African languages.
 
-Click [here to start a new discussion on african-stopwords](https://github.com/masakhane-io/masakhane-preprocessing/discussions/new?category=african-stopwords).
+If you're not sure if a word is/is not a stopword, the discussion will help.
+If you feel a new word should be added as a stopword in your language, please create a discussion around it.
+
+- Click [here to browse through the current discussions](https://github.com/masakhane-io/masakhane-preprocessing/discussions/categories/african-stopwords). Join the discussion. Some African languages do not have a fixed definition of what constitutes a stop-word. It is up to US to define them TOGETHER.
+- Click [here to start a new discussion on african-stopwords](https://github.com/masakhane-io/masakhane-preprocessing/discussions/new?category=african-stopwords).
 
 ## Plan
 Open to suggestions. For now I think we can:
