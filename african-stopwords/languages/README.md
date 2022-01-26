@@ -1,12 +1,12 @@
 # Contribution Highlight
 
-Please fill this table while making a pull request. 
+__Please fill this table while adding stopwords for your language.__ 
 
 Add the source of the data used to extract the stopwords as well as your name and how you contributed (curating the data, adding already curated data here, reviewing ,etc)
 
-| Language name | Language (tag) | Source of data | Contributors |
+| Language name | Language tag | Source of data | Contributors |
 | ------ | --- | ---------- | ---------- |
-|Afrkaans| af |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
+|Afrikaans| af |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
 |Hausa| ha |   [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
 |Somali| so |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
 |Sesotho| st |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
