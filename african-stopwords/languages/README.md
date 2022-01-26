@@ -4,14 +4,14 @@ Please fill this table while making a pull request.
 
 Add the source of the data used to extract the stopwords as well as your name and how you contributed (curating the data, adding already curated data here, reviewing ,etc)
 
-| Language (tag) | Source of data | Contributors |
-| ------ | ---------- | ---------- |
-| af |  [Stopword Lists for 19 Languages](https://www.kaggle.com/rtatman/stopword-lists-for-19-languages)| added by Chris Emezue |
-| ha |  [Stopword Lists for 19 Languages](https://www.kaggle.com/rtatman/stopword-lists-for-19-languages)| added by Chris Emezue |
-| so | [Stopword Lists for 19 Languages](https://www.kaggle.com/rtatman/stopword-lists-for-19-languages)| added by Chris Emezue |
-| st | [Stopword Lists for 19 Languages](https://www.kaggle.com/rtatman/stopword-lists-for-19-languages)| added by Chris Emezue |
-| sw |  [Stopword Lists for 19 Languages](https://www.kaggle.com/rtatman/stopword-lists-for-19-languages)| added by Chris Emezue |
-| yo | [Stopword Lists for 19 Languages](https://www.kaggle.com/rtatman/stopword-lists-for-19-languages)| added by Chris Emezue, reviewed by Olanrewaju Samuel   |
-| zu | [Stopword Lists for 19 Languages](https://www.kaggle.com/rtatman/stopword-lists-for-19-languages)| added by Chris Emezue |
-| rw | [KINNEWS and KIRNEWS: Benchmarking Cross-Lingual Text Classification for Kinyarwanda and Kirundi](https://aclanthology.org/2020.coling-main.480/)| added, reviewed by Andre Niyongabo Rubungo|
-| rn | [KINNEWS and KIRNEWS: Benchmarking Cross-Lingual Text Classification for Kinyarwanda and Kirundi](https://aclanthology.org/2020.coling-main.480/)| added, reviewed by Andre Niyongabo Rubungo |
+| Language name | Language (tag) | Source of data | Contributors |
+| ------ | --- | ---------- | ---------- |
+|Afrkaans| af |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
+|Hausa| ha |   [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
+|Somali| so |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
+|Sesotho| st |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
+|Kiswahili| sw |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
+|Yoruba| yo | [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue, reviewed by Olanrewaju Samuel   |
+|isiZulu| zu |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
+|Kinyarwanda| rw | [KINNEWS and KIRNEWS: Benchmarking Cross-Lingual Text Classification for Kinyarwanda and Kirundi](https://aclanthology.org/2020.coling-main.480/)| added, reviewed by Andre Niyongabo Rubungo|
+| Kirundi | rn | [KINNEWS and KIRNEWS: Benchmarking Cross-Lingual Text Classification for Kinyarwanda and Kirundi](https://aclanthology.org/2020.coling-main.480/)| added, reviewed by Andre Niyongabo Rubungo |
