@@ -12,7 +12,11 @@ Alternatively,
 
 5. If navigating Github is complex, just write down the stopwords for your language in a `txt` file and send on [Masakhane Slack](https://www.google.com/url?q=https%3A%2F%2Fjoin.slack.com%2Ft%2Fmasakhane-nlp%2Fshared_invite%2FenQtODM3ODA3ODE0ODIwLTAyYzg3M2E3Nzg4Y2I3NzgxNDg4MmNlZDE4OTBjMzBjMjg4NTcxMWZlYTg3ZDljMTU4M2FjOTk3MDVjOWM2NGM&sa=D&sntz=1&usg=AFQjCNGNjFNyyutwL-wQso1gYPGCSXGevg)).
 6. If there are websites/resources with african stopwords, please indicate (via an issue or [Masakhane Slack](https://www.google.com/url?q=https%3A%2F%2Fjoin.slack.com%2Ft%2Fmasakhane-nlp%2Fshared_invite%2FenQtODM3ODA3ODE0ODIwLTAyYzg3M2E3Nzg4Y2I3NzgxNDg4MmNlZDE4OTBjMzBjMjg4NTcxMWZlYTg3ZDljMTU4M2FjOTk3MDVjOWM2NGM&sa=D&sntz=1&usg=AFQjCNGNjFNyyutwL-wQso1gYPGCSXGevg)).
- 
+
+
+__Please fill the [Contribution Highlight Table](https://github.com/masakhane-io/masakhane-preprocessing/tree/main/african-stopwords/languages#contribution-highlight) while adding stopwords for your language.__  
+
+
 ### Discussion
 
 Seeing that the choice of what constitutes a stopword in an African language may be open to debate, [here](https://github.com/masakhane-io/masakhane-preprocessing/discussions/categories/african-stopwords) is a forum for scholars, researchers, linguists, etc to discuss on some controversial stop words or non-stopwords in your African languages.
