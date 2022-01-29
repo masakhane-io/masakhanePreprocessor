@@ -10,7 +10,7 @@ Add the source of the data used to extract the stopwords as well as your name an
 |Hausa| ha |   [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
 |Somali| so |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
 |Sesotho| st |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
-|Kiswahili| sw |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
+|Kiswahili| sw |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages) & [stopword lists from Swahili news dataset](https://zenodo.org/record/5514203)| added by Chris Emezue & Davis David, reviewed by Davis David|
 |Yoruba| yo | [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue, reviewed by Olanrewaju Samuel   |
 |isiZulu| zu |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
 |Kinyarwanda| rw | [KINNEWS and KIRNEWS: Benchmarking Cross-Lingual Text Classification for Kinyarwanda and Kirundi](https://aclanthology.org/2020.coling-main.480/)| added, reviewed by Andre Niyongabo Rubungo|
