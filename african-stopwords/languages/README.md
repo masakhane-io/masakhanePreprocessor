@@ -15,3 +15,4 @@ Add the source of the data used to extract the stopwords as well as your name an
 |isiZulu| zu |  [Stopword Lists for African Languages](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages)| added by Chris Emezue |
 |Kinyarwanda| rw | [KINNEWS and KIRNEWS: Benchmarking Cross-Lingual Text Classification for Kinyarwanda and Kirundi](https://aclanthology.org/2020.coling-main.480/)| added, reviewed by Andre Niyongabo Rubungo|
 | Kirundi | rn | [KINNEWS and KIRNEWS: Benchmarking Cross-Lingual Text Classification for Kinyarwanda and Kirundi](https://aclanthology.org/2020.coling-main.480/)| added, reviewed by Andre Niyongabo Rubungo |
+|Nigeria pidgin | pcm | [NaijaSenti: A Nigerian Twitter Sentiment Corpus for Multilingual Sentiment Analysis](https://github.com/hausanlp/NaijaSenti/tree/main/data/stopwords)| added by Samuel Oyerinde|
