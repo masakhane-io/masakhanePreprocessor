@@ -32,7 +32,22 @@ Open to suggestions. For now I think we can:
 
 1. Compile a good list of african stopwords and make a feature request to have it added on [nltk](https://github.com/nltk/nltk/blob/develop/CONTRIBUTING.md).
 
+## Extracting from monolingual corpus
+The file `extract.py` will extract the unqiue words (And their frequency) from a monolingual corpus file. 
 
+Please use the extracted words and their frequency to generate and review stopwords for a language.
+
+We are working on the intuition that stpwords for a given language will have a high frequency compared to non-stopwords
+
+```python
+"""
+Usage
+---------------------  
+--file (-i) : input file
+--output (-o) : output file 
+--freq (-f) : frequency threshold. If this is specified, output will be only the words with frequency greater than or equal to the threshold
+"""
+```  
 ___
 
 - Initial stopwords list for Afrikaans, Hausa, Lugbarati, Lugbarati (Official), Somali, Sesotho, Kiswahili, Yoruba, and isiZulu got from [here](https://www.kaggle.com/rtatman/stopword-lists-for-african-languages). 
