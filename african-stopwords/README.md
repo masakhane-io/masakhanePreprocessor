@@ -35,7 +35,7 @@ Open to suggestions. For now I think we can:
 ## Extracting from monolingual corpus
 The file `extract.py` will extract the unqiue words (and their frequency) from a monolingual corpus file. 
 
-Please use the extracted words and their frequency to generate and review stopwords for a language.
+Please use the extracted words and their frequency to generate and __review__ their use as stopwords for a language.
 
 We are working on the intuition that stpwords for a given language will have a high frequency compared to non-stopwords
 
