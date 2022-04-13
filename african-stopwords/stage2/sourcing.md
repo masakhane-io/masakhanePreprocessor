@@ -18,6 +18,7 @@ You can start from here while looking for where to find monolingual data
 - MAFAND
 - AfriBERTA corpus (monolingual data in 10 languages)
 - [Lanfrica](www.lanfrica.com/records) (using the language filter tag.)
+> One idea: could look for MT parallel corpus of your language and only take the monolingual data for the language of interest 
 
 
 ### Deadline for Sourcing: 25th April 2022: 
