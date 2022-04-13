@@ -9,6 +9,6 @@
 - social media domain
 - religion 
 
-> If there are more you feel we should add please let me know.
+> If there are more you feel we should add (or remove) please let me know.
 
 ### Deadline for Sourcing: 25th April 2022: 
