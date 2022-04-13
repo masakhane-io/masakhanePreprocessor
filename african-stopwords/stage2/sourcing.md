@@ -1,3 +1,4 @@
+# Sourcing Team
 ## Workflow
 - Each team member goes to a monolingual source for their language.
 - Then get the data (best in `.txt`) and upload to this [Google drive](https://drive.google.com/drive/folders/11tO917ezdjATB-Ct94mUYfBXf0aVCcuS?usp=sharing) (there will be a folder for each language. If there isn’t, then you create one). `Folder name: IS0-639-3 of language`. Consult [this](https://github.com/masakhane-io/masakhane-preprocessing/blob/main/african-stopwords/LANGUAGE-TABLE.md) for language name. 
@@ -17,7 +18,7 @@ You can start from here while looking for where to find monolingual data
 - WMT
 - MAFAND
 - AfriBERTA corpus (monolingual data in 10 languages)
-- [Lanfrica](https://www.lanfrica.com/records) (using the language filter tag.)
+- [Lanfrica](https://www.lanfrica.com/records) (using the language filter tag).
 > One idea: could look for MT parallel corpus of your language and only take the monolingual data for the language of interest 
 
 
