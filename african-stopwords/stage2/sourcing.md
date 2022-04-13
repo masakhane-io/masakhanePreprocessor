@@ -11,4 +11,10 @@
 
 > If there are more you feel we should add (or remove) please let me know (@Chris Emezue).
 
+## Possible sources of monolingual data
+- WMT
+- MAFAND
+- AfriBERTA corpus (monolingual data in 10 languages)
+
+
 ### Deadline for Sourcing: 25th April 2022: 
