@@ -10,7 +10,7 @@ with open("requirements.txt", encoding="utf-8") as req_fp:
 if __name__ == "__main__":
     setup(
         name="masakhanePreprocessor",
-        version="0.0.5",
+        version="0.0.6",
         description="masakhanePreprocessor is an effective language-first preprocessing tool for African languages",
         long_description=long_description,
         long_description_content_type="text/markdown",

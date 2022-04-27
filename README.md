@@ -5,7 +5,12 @@ We build on the [clean-text](https://github.com/jfilter/clean-text/tree/master/c
 
 ## How to Use
 Install:
-```pip install masakhanePreprocessor```
+
+```
+git clone https://github.com/masakhane-io/masakhanePreprocessor.git
+cd masakhanePreprocessor
+pip install .
+```
 ## Preprocessor
 You only need to specify your language and it loads the important preprocessing style for You!
 

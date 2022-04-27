@@ -94,7 +94,7 @@ class Preprocessor():
         #-------------------------
         
         #-----------------------------
-        languages = read_json('languages.json')
+        languages = read_json('masakhanePreprocessor/languages.json')
         self.language_map={}
         for l_ in languages:
             self.language_map.update({l_['language_short']:l_})
