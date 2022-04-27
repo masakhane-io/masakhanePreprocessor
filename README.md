@@ -1,17 +1,17 @@
-# `masakhane-preprocessor` 
+# `masakhanePreprocessor` 
 An effective language-first preprocessing tool for African languages (🔧 Beta version).
 
 We build on the [clean-text](https://github.com/jfilter/clean-text/tree/master/cleantext) preprocessor.
 
 ## How to Use
 Install:
-```pip install masakhane-preprocessor```
+```pip install masakhanePreprocessor```
 ## Preprocessor
 You only need to specify your language and it loads the important preprocessing style for You!
 
 You initialize the `Preprocessor` in Python as follows:
 ```python
-from masakhane-preprocessor import Preprocessor
+from masakhanePreprocessor import Preprocessor
 
 my_prep = Preprocessor(lang='ig')
 ```

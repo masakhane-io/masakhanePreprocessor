@@ -2,16 +2,21 @@ import re
 import os
 import sys
 import json
+import logging
 import unicodedata
 from cleantext import clean
 from pathlib import Path
-from langs import get_correct_language_code
+from masakhanePreprocessor.langs import get_correct_language_code
 
 
-#Each language has its own preprocessing rules
-#-allowed_symbols, disallowed_symbols which affects punct
-#strip punctuation
-#strip symbols
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s :: %(levelname)s :: %(message)s')
+
+# Gets or creates a logger
+logger = logging.getLogger(__name__)  
+
+# set log level
+logger.setLevel(logging.INFO)
 
 
 def read_json(file):
@@ -39,7 +44,7 @@ def get_ord(n: list):
         try:
             allowed_ints.append(ord(a))
         except Exception:
-            #a is not a single character. use its char instead of ord()
+            # `a` is not a single character. use its char instead of ord()
             allowed_char.append(a)
     return allowed_ints,allowed_char
    
@@ -69,7 +74,7 @@ class Preprocessor():
         if lang!='':
             lang = get_correct_language_code(lang)
             if not lang:
-                print(f'Could not get the correct code for your language. If you cannot find your language in the available languages please raise an issue.')
+                logger.info(f'Could not get the correct code for your language. If you cannot find your language in the available languages please raise an issue.')
   
         self.USE_DIACRITICS=False
         
@@ -79,11 +84,11 @@ class Preprocessor():
        
         #-----------------------
         try:
-            self.lang_rules = read_json(f'rules/{lang}.json')
+            self.lang_rules = read_json(f'masakhanePreprocessor/rules/{lang}.json')
         except Exception as e:
             #Language rules probably does not exist. For now pass
-            #TO DO: Make better
-            print(f'Cannot find the rules for your language. Switching to the default. Call .available_langs() to get the current available languages')
+          
+            logger.warning(f'Cannot find the rules for your language. Switching to the default. Call `.available_langs()` to get the current available languages')
             pass
         
         #-------------------------
@@ -140,7 +145,8 @@ class Preprocessor():
         
     def available_langs(self):
         available_langs = [str(f.name).split('.json')[0] for f in os.scandir('rules') if str(f.name).endswith('json')]
-        return list([f"{a} -> {self.language_map[a]['language']}" for a in available_langs])
+        available_langs_print = list([f"{a} -> {self.language_map[a]['language']}" for a in available_langs])
+        logging.info(f'Available languages rules: {available_langs_print}')
         
     
     def preprocess_str(self,text):
@@ -171,10 +177,10 @@ class Preprocessor():
         clean_texts = [self.preprocess_str(txt) for txt in files]
         new_filename = str(path.name).split(path.suffix)[0]+'_CLEAN'+path.suffix
         if save_list_to_file(clean_texts,new_filename,output_path):
-            print(f'Clean file(s) saved successfully to {os.path.join(output_path,new_filename)}')
+            logger.info(f'Clean file(s) saved successfully to {os.path.join(output_path,new_filename)}')
 
 if __name__ == "__main__":
     #Testing for Fon
     my_prep = Preprocessor(lang='fon')
-    print(my_prep.available_langs())
+    my_prep.available_langs()
     print(my_prep.preprocess_str('è:ụẹ́ēạ́ị̄ìīí ði ɔ na-aga enyiɛ̆"he went":, ɛ̃ winnya ɖu nɔ mya nukún nú mǐî, ï hú nǔ bǐ ɔ mǐ sixuὲ` nugbǒmaɖɔ dó mɔ nǔ ɖò dandan é ɖé'))
