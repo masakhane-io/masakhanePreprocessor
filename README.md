@@ -3,7 +3,7 @@ An effective language-first preprocessing tool for African languages (🔧 Beta 
 
 We build on the [clean-text](https://github.com/jfilter/clean-text/tree/master/cleantext) preprocessor.
 
-## How to Use [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ju6_HMfsSuLFW0aPMwGTMn8afL6fDTan?usp=sharing]
+## How to Use [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ju6_HMfsSuLFW0aPMwGTMn8afL6fDTan?usp=sharing)]
 Install:
 
 ```
