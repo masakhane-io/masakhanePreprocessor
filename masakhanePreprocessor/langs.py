@@ -1,5 +1,6 @@
 from langcodes import *
 import json
+from pathlib import Path
 
 
 # This will help with 
@@ -12,7 +13,7 @@ def read_json(file):
         return json.load(f)
 
 #African languages list from https://github.com/dsfsi/masakhane-web/blob/master/src/server/core/languages.json
-languages = read_json('masakhanePreprocessor/languages.json')
+languages = read_json(Path(__file__).resolve().parent / 'languages.json')
 language_mapping =   {}
 for l in languages:
     language_mapping.update({l['language_en'].lower():l['language_short']})

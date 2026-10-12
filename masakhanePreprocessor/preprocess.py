@@ -84,7 +84,7 @@ class Preprocessor():
        
         #-----------------------
         try:
-            self.lang_rules = read_json(f'masakhanePreprocessor/rules/{lang}.json')
+            self.lang_rules = read_json(Path(__file__).resolve().parent / 'rules' / f'{lang}.json')
         except Exception as e:
             #Language rules probably does not exist. For now pass
           
@@ -94,7 +94,7 @@ class Preprocessor():
         #-------------------------
         
         #-----------------------------
-        languages = read_json('masakhanePreprocessor/languages.json')
+        languages = read_json(Path(__file__).resolve().parent / 'languages.json')
         self.language_map={}
         for l_ in languages:
             self.language_map.update({l_['language_short']:l_})
@@ -134,6 +134,7 @@ class Preprocessor():
         'no_numbers':no_numbers,
         'no_digits':no_digits,
         'no_currency_symbols':no_currency_symbols,
+        'no_punct':no_punct,
         'replace_with_punct':replace_with_punct,          # instead of removing punctuations you may replace them. #from CLEAN-TEXT
         'replace_with_url':replace_with_url,
         'replace_with_email':replace_with_email,
@@ -144,7 +145,7 @@ class Preprocessor():
         }
         
     def available_langs(self):
-        available_langs = [str(f.name).split('.json')[0] for f in os.scandir('rules') if str(f.name).endswith('json')]
+        available_langs = [str(f.name).split('.json')[0] for f in os.scandir(Path(__file__).resolve().parent / 'rules') if str(f.name).endswith('json')]
         available_langs_print = list([f"{a} -> {self.language_map[a]['language']}" for a in available_langs])
         logging.info(f'Available languages rules: {available_langs_print}')
         
@@ -175,7 +176,7 @@ class Preprocessor():
             raise Exception(f'Error occured while reading file {filename}. See error below: \n {e}')
         
         clean_texts = [self.preprocess_str(txt) for txt in files]
-        new_filename = str(path.name).split(path.suffix)[0]+'_CLEAN'+path.suffix
+        new_filename = path.stem + '_CLEAN' + path.suffix
         if save_list_to_file(clean_texts,new_filename,output_path):
             logger.info(f'Clean file(s) saved successfully to {os.path.join(output_path,new_filename)}')
 
